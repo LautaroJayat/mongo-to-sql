@@ -6,7 +6,7 @@
 
 
 A simple mongo to sql translator powered by Nodejs
-![header](assets/header.png)
+![header](assets/example.png)
 
 
 

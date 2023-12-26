@@ -14,16 +14,10 @@ export class RawValue {
         this.rawValue = rawValue;
         const t = typeof rawValue;
 
-        if (t === 'number' || t === 'string') {
+        if (t === 'number' || t === 'string' || t === 'boolean') {
             this.type = 'primitive';
             this.jsType = t;
             return;
-        }
-
-        if (t === 'boolean') {
-            this.type = 'primitive';
-            this.jsType = 'boolean';
-            return
         }
 
         if (this.rawValue === null) {

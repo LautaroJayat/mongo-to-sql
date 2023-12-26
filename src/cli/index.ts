@@ -13,7 +13,7 @@ Examples
     - $0 --cool db.users.find({},{name: 1, id: 1}) 
 `
 
-const argv = yargs(process.argv.slice(2)).options('cool', { type: 'boolean', description: 'make a cool output' })
+const argv = yargs(process.argv.slice(2)).options('cool', { type: 'boolean', description: 'makes a cool output' })
     .usage(help)
     .parseSync();
 
@@ -32,9 +32,9 @@ if (!input && !process.stdin.isTTY) {
 
 try {
     if (input) {
-        console.log("IN:  ", input.substring(0, input.lastIndexOf(")") + 1))
+        argv.cool && console.log("IN:  ", input.substring(0, input.lastIndexOf(")") + 1))
         const parsedQuery = composeSQLQuery(`${input}`);
-        console.log("OUT: ", parsedQuery);
+        console.log(`${argv.cool ? "OUT:  " : ""}${parsedQuery}`);
         process.exit(0);
     } else {
         console.log(`Usage: ${argv.$0} [mongo command]`)

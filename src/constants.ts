@@ -1,0 +1,22 @@
+export const DOT = ".";
+export const COMMA = ",";
+export const SEMICOLON = ";"
+export const SPACE = " ";
+export const OPEN_PARENTHESES = "(";
+export const CLOSING_PARENTHESES = ")";
+export const OPEN_BRACE = "{";
+export const CLOSING_BRACE = "}";
+export const $OR = "$or";
+export const $AND = "$and";
+export const $LT = "$lt";
+export const $LTE = "$lte";
+export const $GT = "$gt";
+export const $GTE = "$gte";
+export const $NE = "$ne";
+export const $IN = "$in";
+export const EQ = "="
+export const SELECT = "SELECT"
+export const STAR = "*"
+export const WHERE = "WHERE";
+export const FROM = "FROM";
+export const AND = "AND";

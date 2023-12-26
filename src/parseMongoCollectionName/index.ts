@@ -1,0 +1,1 @@
+export { parseCollectionName } from "./parseCollectionName";

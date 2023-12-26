@@ -17,7 +17,7 @@ A simple mongo to sql translator powered by Nodejs
     * [3. Install all dependencies](#3-install-all-dependencies)
     * [4. Transpile the project](#4-transpile-the-project)
     * [5. Install the package as a cmd utility](#5-install-the-package-as-a-cmd-utility)
-    * [6. Try to translate a query](#6-try-to-translate-a-query)
+    * [6. Translate a query](#6-translate-a-query)
 * [Usage](#usage)
 * [Observations](#observations)
     * [String Values](#string-values)

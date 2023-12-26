@@ -1,3 +1,5 @@
+import { COMMA, SELECT, SPACE, STAR } from "../constants";
+
 export function checkValuesOrThrow(values: Array<unknown>) {
     if (values.length === 0) {
         return
@@ -13,7 +15,6 @@ export function checkValuesOrThrow(values: Array<unknown>) {
     }
 }
 
-import { COMMA, SELECT, SPACE, STAR } from "../constants";
 export const generateSQLSelectStmt = (select: Record<string, any> | undefined): string => {
 
     if (!select) return `${SELECT}${SPACE}${STAR}`;

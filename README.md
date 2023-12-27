@@ -99,7 +99,7 @@ When using string values, remember to use single quotes. If you try to quote usi
 ```js
 // this is ok
 db.users.find({name: 'smith'})
-// but this no
+// but this not
 db.users.find({name: "smith"})
 ```
 

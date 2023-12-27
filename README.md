@@ -130,7 +130,7 @@ To avoid unexpected errors, if you are providing a string directly into the shel
 # this will work
 mongoToSql "db.users.find({age: { \$gte: 25 }, name: 'smith' })"
 
-# this will interpret 'gre' as an env and will try to interpolate its value
+# this will interpret 'gte' as an env and will try to interpolate its value
 mongoToSql "db.users.find({age: { $gte: 25 }, name: 'smith' })"
 ```
 

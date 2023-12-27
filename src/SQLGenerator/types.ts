@@ -135,7 +135,7 @@ export class ArrayExpression implements SQlBuilder {
     }
 
     toSQL(): string {
-        let SQL = []
+        const SQL = []
         for (let i = 0; i < this.content.length; i++) {
             if (this.content[i] instanceof RightPart) {
                 throw new Error("only binary expressions or values are allowed inside an array expression")
